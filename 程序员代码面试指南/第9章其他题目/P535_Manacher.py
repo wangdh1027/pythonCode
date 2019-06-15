@@ -26,4 +26,4 @@ def Manacher(arr):
             index = i
         Max = max(Max, pArr[i]);
     return Max - 1;
-print(Manacher('acdsaaasdcadb'))
+print(Manacher('1dbdacdsaaasdcadb'))

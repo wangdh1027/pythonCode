@@ -19,6 +19,6 @@ def maxsonarr(arr):
         sum1 = (max(sum1+i,i))
         res = max(res,sum1)
     return res
-arr = [-3,-2,-4,5,-2,-5,-1,-3]
+arr = [-3,-2,-4,5,-2,5,-1,-3]
 print(maxarr(arr))
 print(maxsonarr(arr))

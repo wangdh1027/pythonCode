@@ -41,8 +41,8 @@ def getIndexOf(str1,str2):
         else:
             i2 = Next[i2]
     return i1-i2 if i2==size2 else -1
- 
-str1 = 'eqweqw'
-str2 = ' '
-print(getNext(str1))
+
+str1 = 'asdfasdfasdfasdfasdfasqweaqwasdffffffffffffffffffffffffasdasdfsadfsdfsdfsdffsdfsdasdascasfsadwfawfsdf'
+str2 = 'fffffffffffffffffffffffasd'
+print(getNext(str2))
 print(getIndexOf(str1,str2))

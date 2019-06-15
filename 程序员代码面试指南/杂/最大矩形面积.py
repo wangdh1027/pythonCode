@@ -35,8 +35,8 @@ class Solution1:
                     maxmian = max(maxmian,matrix[i][j])
         return maxmian*maxmian
 test = Solution1()
-tmaxsize = test.maximalSquare([["1","0","1","1","1"],
-                               ["1","0","1","1","1"],
+tmaxsize = test.maximalSquare([["1","1","1","1","1"],
+                               ["1","1","1","1","1"],
                                ["1","1","1","1","1"],
                                ["1","0","0","1","0"]])
 print(tmaxsize)

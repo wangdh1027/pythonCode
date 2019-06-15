@@ -14,8 +14,8 @@ def LCS(s1, s2):
         chess[i][0][0] = s1[i - 1]
     for j in list(range(1, size2)):
         chess[0][j][0] = s2[j - 1]
-    print("初始化数据：")
-    print(chess)
+#    print("初始化数据：")
+#    print(chess)
     for i in list(range(1, size1)):
         for j in list(range(1, size2)):
             if s1[i - 1] == s2[j - 1]:
@@ -24,8 +24,8 @@ def LCS(s1, s2):
                 chess[i][j] = ['←', chess[i][j - 1][1]]
             else:
                 chess[i][j] = ['↑', chess[i - 1][j][1]]
-    print("计算结果：")
-    print(chess)
+#    print("计算结果：")
+#    print(chess)
     i = size1 - 1
     j = size2 - 1
     s3 = []
@@ -40,4 +40,4 @@ def LCS(s1, s2):
             i -= 1
     s3.reverse()
     print("最长公共子序列：%s" % ''.join(s3))
-LCS("ABCBDAB", "BDCABA")
+LCS("1A2C3D4B56", "B1D23CA45B6A")
